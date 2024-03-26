@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banqa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="load.css">
+    <script src="https://kit.fontawesome.com/6f19e35b39.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="bank-container">
+        <div id="bank-page">
+            <i class="fas fa-university logo"></i>
+            <div class="header">Chafe Bank</div>
+            <h1 id="accounts-header">Accounts</h1>
+            <div class="accounts-box first active">
+                <div class="account-f">Personal Account / 61923012</div>
+                <div class="account-f-type">Default</div>
+                <div class="account-f-name">Ruple Cfg</div>
+                <div class="account-f-balance">$31,169.00</div>
+                <div class="account-f-balance-text">Available Balance</div>
+                <button class="withdraw-button o">WITHDRAW</button>
+                <button class="deposit-button g">DEPOSIT</button>
+                <button class="transfer-button w">TRANSFER</button>
+            </div>
+            <!-- <div class="accounts-box second">
+                <div class="account-f">Casino / 64397152</div>
+                <div class="account-f-type">Business Account</div>
+                <div class="account-f-name">Ruple Cfg</div>
+                <div class="account-s-balance">$285,169.00</div>
+                <div class="account-f-balance-text">Available Balance</div>
+                <button class="withdraw-button">WITHDRAW</button>
+                <button class="transfer-button">TRANSFER</button>
+            </div> -->
+            <h1 id="transaction-header">Transaction History</h1>
+            <div id="transaction">
+            </div>
+            <div class="cash">Cash: $31.00</div>
+        </div>
+
+        <div id="withdraw-page">
+            <div class="hide-co">
+                <h3 class="box-header">Personal Account / <br>61923012</h3>
+                <div class="b-box">
+                    <div class="f-box-m">
+                    <p class="dolar-sign">$</p>
+                    <label for="w-value" id="label">Amount</label>
+                    <input class="w-number inp" id="w-number" name="w-value" type="number" min="1">
+                </div>
+                <div class="s-box-m">
+                    <p class="comment-sign">//</p>
+                    <label for="w-id" id="label">Comment</label>
+                    <input class="id inp" id="w-comment" name="w-id" type="text" min="1">
+                </div>
+            </div>
+                <button class="w-cancel o cancel">CANCEL</button>
+                <button class="w-okay g">WITHDRAW</button>
+            </div>
+            <div class='spinner-co'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <div id="deposit-page">
+            <div class="hide-co">
+                <h3 class="box-header">Personal Account / <br>61923012</h3>
+                <div class="b-box">
+                    <div class="f-box-m">
+                        <p class="dolar-sign">$</p>
+                        <label for="d-value" id="label">Amount</label>
+                        <input class="d-number inp" id="d-number" name="d-value" type="number" min="1">
+                    </div>
+                    <div class="s-box-m">
+                    <p class="comment-sign">//</p>
+                    <label for="d-id" id="label">Comment</label>
+                    <input class="id inp" id="d-comment" name="d-id" type="text" min="1">
+                </div>
+            </div>
+                <button class=" o cancel">CANCEL</button>
+                <button class="d-okay g">DEPOSIT</button>
+            </div>
+            <div class='spinner-co'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <div id="transfer-page">
+            <div class="hide-co">
+                <h3 class="box-header">Personal Account / <br>61923012</h3>
+                <div class="b-box">
+                    <div class="f-box-m">
+                        <p class="dolar-sign">$</p>
+                        <label for="t-value" id="label">Amount</label>
+                        <input class="t-number inp" id="t-number" name="t-value" type="number" min="1">
+                    </div>
+
+                    <div class="s-box-m">
+                        <p class="comment-sign">//</p>
+                        <label for="t-id" id="label">Comment</label>
+                        <input class="id inp" id="t-comment" name="t-id" type="text" min="1">
+                    </div>
+
+                    <div class="t-box-m">
+                    <p class="target-sign">#</p>
+                    <label for="t-target" id="label">State ID..</label>
+                    <input class="target inp" id="t-target" name="t-id" type="number" min="1">
+                    
+                    </div>
+                </div>
+                <button class=" o cancel">CANCEL</button>
+                <button class="t-okay g">TRANSFER</button>
+            </div>
+            <div class='spinner-co'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <div class="back-filter"> </div>
+
+
+
+
+
+
+    </div>
+
+    <div id="load-container">
+        <div class='spinner'>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+<script src="ui.js">
+
+</script>
+
+</html>
