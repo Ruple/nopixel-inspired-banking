@@ -1,5 +1,6 @@
 # nopixel-inspired-banking
 A NoPixel-inspired banking system for Fivem
+@Ruple 2021
 ## Dependencies
 
 bt-target
